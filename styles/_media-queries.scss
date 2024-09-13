@@ -1,0 +1,16 @@
+/*
+TABLET DURUMUNA GEÇERKEN KULLANILDIĞIYERDE İÇİ DOLDURULACAKTIR
+*/
+@mixin tablet{
+    @media screen and (max-width:768px){//table ile çağrılır
+        @content;//boyutlandırmaya gerek yoktur
+    }
+}
+
+//TELEFONLARA GÖRE BOYUTLANDIRMADA TABAKA İÇERDİĞİ KULLANILDIĞI 
+//YERDE YAZILACAKTIR
+@mixin mobile{
+    @media screen and (max-width: 540px){
+        @content;
+    }
+}
